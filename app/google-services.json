@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1025088113074",
+    "firebase_url": "https://startrekchat-dd320.firebaseio.com",
+    "project_id": "startrekchat-dd320",
+    "storage_bucket": "startrekchat-dd320.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025088113074:android:9943844e5ebc25ff",
+        "android_client_info": {
+          "package_name": "com.example.mainaccount.startrekfavoritecaptain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025088113074-s1fls17qvu4pe3gh61pc94o3e1bnr3su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mainaccount.startrekfavoritecaptain",
+            "certificate_hash": "84fe4fd3d85077f03df6b8c03a19285398bf0d21"
+          }
+        },
+        {
+          "client_id": "1025088113074-sdko100nvgj9s4ffelbio7517h160ddc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL3DXC94MGFMXAWNlT0Pk7NMVVIgAzUdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025088113074-sdko100nvgj9s4ffelbio7517h160ddc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

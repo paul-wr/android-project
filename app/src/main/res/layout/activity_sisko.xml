@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:layout_width="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sisko"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mainaccount.startrekfavoritecaptain.ActivitySisko">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/captain_sisko"
+        android:id="@+id/imageViewS"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewS"
+        android:textSize="@dimen/custom_text"
+        android:padding="9dp"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/imageViewS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/captain_sisko_vote" />
+
+
+    <Button
+        android:text="@string/vote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonVoteS"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/textViewS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:textSize="@dimen/custom_text" />
+
+
+    <Button
+        android:text="@string/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonNextS"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/buttonVoteS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/custom_text"
+        android:textStyle="normal|bold" />
+
+
+    <Button
+        android:text="@string/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeBtn"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/buttonNextS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/custom_text"
+        android:textStyle="normal|bold" />
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarS"
+        android:max="100"
+        android:layout_below="@+id/homeBtn"
+        android:layout_marginTop="@dimen/custom_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
+</ScrollView>

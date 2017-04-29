@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Star Trek Favorite Captain</string>
+    <string name="action_settings">Settings</string>
+    <string name="info_text">
+        "INFORMATIONEN"
+        "\nWillkommen bei der Star Trek Favorite Captain Voting App."
+        "\nUm mit der Abstimmung zu beginnen, klicken Sie auf die Schaltfläche Start Voting."
+        "\nSie werden dann Bildschirm durch Bildschirm durch die verschiedenen Star Trek Kapitäne genommen."
+        "\nWählen Sie, indem Sie die Suchleiste nach rechts ziehen, bis Sie mit der Abstimmung zufrieden sind."
+        "\nStimmen sind zwischen 0% - 100% bewertet."
+        "\n\nAuf dem Media-Bildschirm kannst du einige Fan-Fotos machen und sie auch ansehen."
+        "\nSie können die neuesten Star Trek Discovery Serie Clips und besuchen Sie die offizielle Star Trek Website."
+        "\nUm die Ergebnisse anzuzeigen, klicken Sie auf die Schaltfläche Ergebnisse anzeigen auf der Startseite.."
+    </string>
+    <string name="media1">Neue Serie STAR TREK DISCOVERY Video Clip</string>
+    <string name="title_activity_scroll">ScrollActivity</string>
+
+    <string name="title_activity_login">Anmelden</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Passwort (optional)</string>
+    <string name="action_sign_in">Einloggen oder Registrieren</string>
+    <string name="action_sign_in_short">Anmelden</string>
+    <string name="error_invalid_email">Diese E-Mail-Adresse ist ungültig</string>
+    <string name="error_invalid_password">Dieses Passwort ist zu kurz</string>
+    <string name="error_incorrect_password">Dieses Passwort ist falsch</string>
+    <string name="error_field_required">Dieses Feld wird benötigt</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
+    <string name="media">Medien</string>
+    <string name="engage_cloak">ENGAGE CLOAK</string>
+    <string name="engage_warp">ENGAGE WARP</string>
+    <string name="take_fan_photo">Nehmen Sie Fan Foto</string>
+    <string name="star_trek_online">STAR TREK ONLINE</string>
+    <string name="captain_archer_vote">CAPTAIN ARCHER ABSTIMMUNG:</string>
+    <string name="vote">Abstimmung</string>
+    <string name="next">Nächster</string>
+    <string name="home">Zuhause</string>
+    <string name="photo_display">Fotoanzeige</string>
+    <string name="fan_gallery">Fan-Galerie</string>
+    <string name="information">Information</string>
+    <string name="captain_janeway_vote">CAPTAIN JANEWAY ABSTIMMUNG:</string>
+    <string name="captain_kirk_vote">CAPTAIN KIRK VOTE:</string>
+    <string name="register">Neu registrieren</string>
+    <string name="captain_picard_vote">CAPTAIN PICARD ABSTIMMUNG:</string>
+    <string name="voting_results">Abstimmungsergebnisse</string>
+    <string name="captain_sisko_vote">CAPTAIN SISKO ABSTIMMUNG:</string>
+    <string name="title_activity_maps">Karte</string>
+    <string name="start_voting">Starten Sie die Abstimmung</string>
+    <string name="view_results">Ergebnisse anzeigen</string>
+</resources>
