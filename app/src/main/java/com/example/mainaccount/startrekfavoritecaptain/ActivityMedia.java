@@ -8,12 +8,21 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ActivityMedia extends AppCompatActivity {
     ImageView iv;
     Animation animation;
+    private FirebaseDatabase database;
+    DatabaseReference databaseRef;
+    EditText fanRegET;
+    String fanName;
+
 
 
     @Override
@@ -26,10 +35,29 @@ public class ActivityMedia extends AppCompatActivity {
         Button connectOnlineBtn = (Button) findViewById(R.id.connectOnline);
         Button warpBtn = (Button) findViewById(R.id.warp_button);
         Button cloakBtn = (Button) findViewById(R.id.cloak_button);
+        Button fanReg = (Button) findViewById(R.id.fanRegister);
+
+        database = FirebaseDatabase.getInstance();
+        databaseRef = database.getReference("message");
+
 
         iv = (ImageView) findViewById(R.id.image_starship);
 
 
+        fanRegET = (EditText) findViewById(R.id.fanRegisterEdit);
+
+
+
+        fanReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fanName = fanRegET.getText().toString();
+                databaseRef.setValue(fanName);
+                fanRegET.setText("");
+                Toast.makeText(getApplicationContext(), "Fan added to Database", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         warpBtn.setOnClickListener(new View.OnClickListener() {
             @Override

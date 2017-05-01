@@ -32,7 +32,10 @@ public class MainActivity extends AppCompatActivity {
         // final TextView tokenView = (TextView) findViewById(R.id.informationTextView);
         // tokenView.setText(FirebaseInstanceId.getInstance().getToken());
 
-        // FirebaseMessaging.getInstance();
+
+
+
+
 
 
 

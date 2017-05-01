@@ -108,6 +108,32 @@
         android:layout_marginTop="21dp" />
 
     <Button
+        android:text="Fan Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fanRegister"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/custom_text"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:elevation="0dp"
+        android:layout_below="@+id/connectOnline"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Fan Name: "
+        android:ems="10"
+        android:layout_below="@+id/fanRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/fanRegisterEdit"
+        android:background="@android:color/white" />
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonSTClip"
@@ -120,7 +146,7 @@
         android:elevation="0dp"
         android:layout_marginTop="100dp"
         android:textAllCaps="false"
-        android:layout_below="@+id/cameraButton"
+        android:layout_below="@+id/fanRegisterEdit"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -132,6 +158,8 @@
         android:layout_marginTop="33dp"
         android:layout_alignTop="@+id/textViewMedia"
         android:layout_centerHorizontal="true" />
+
+
 
 
 </RelativeLayout>
