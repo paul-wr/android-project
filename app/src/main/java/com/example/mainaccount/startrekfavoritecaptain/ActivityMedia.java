@@ -25,10 +25,13 @@ public class ActivityMedia extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_media);
+
 
         Button stClipBtn = (Button) findViewById(R.id.buttonSTClip);
         Button cameraBtn = (Button) findViewById(R.id.cameraButton);
@@ -37,8 +40,10 @@ public class ActivityMedia extends AppCompatActivity {
         Button cloakBtn = (Button) findViewById(R.id.cloak_button);
         Button fanReg = (Button) findViewById(R.id.fanRegister);
 
+
+
         database = FirebaseDatabase.getInstance();
-        databaseRef = database.getReference("message");
+        databaseRef = database.getReference("Fan Listings");
 
 
         iv = (ImageView) findViewById(R.id.image_starship);
@@ -52,7 +57,10 @@ public class ActivityMedia extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 fanName = fanRegET.getText().toString();
-                databaseRef.setValue(fanName);
+
+                databaseRef.push().setValue(fanName);
+
+
                 fanRegET.setText("");
                 Toast.makeText(getApplicationContext(), "Fan added to Database", Toast.LENGTH_SHORT).show();
 

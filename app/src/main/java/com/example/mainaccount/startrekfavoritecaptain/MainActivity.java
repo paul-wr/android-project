@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         // declare and set button variables
         Button startVoteBtn = (Button) findViewById(R.id.button);
         Button mediaBtn = (Button) findViewById(R.id.button2);
