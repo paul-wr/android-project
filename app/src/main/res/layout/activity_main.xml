@@ -129,13 +129,6 @@ tools:context="com.example.mainaccount.startrekfavoritecaptain.MainActivity">
         android:layout_below="@+id/informationTextView"
         android:text="@string/subscribe_to_news" />
 
-    <Button
-        android:id="@+id/logTokenButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/subscribeButton"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/log_token" />
 
 
 

@@ -107,8 +107,36 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="21dp" />
 
+
+    <TextView
+        android:text="Enter fan name below and press button to join the fan club."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/fan_TV"
+        android:textSize="@dimen/custom_text"
+        android:layout_below="@+id/connectOnline"
+        android:textColor="@android:color/white" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Star Trek Fan Name: "
+        android:ems="10"
+        android:layout_below="@+id/fan_TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/fanRegisterEdit"
+        android:background="@android:color/white" />
+
+
+
     <Button
-        android:text="Fan Register"
+        android:text="Click to Join Fan List"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fanRegister"
@@ -118,20 +146,8 @@
         android:fontFamily="sans-serif"
         android:textStyle="normal|bold"
         android:elevation="0dp"
-        android:layout_below="@+id/connectOnline"
+        android:layout_below="@+id/fanRegisterEdit"
         android:layout_marginTop="21dp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="textPersonName"
-        android:hint="Fan Name: "
-        android:ems="10"
-        android:layout_below="@+id/fanRegister"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:id="@+id/fanRegisterEdit"
-        android:background="@android:color/white" />
 
     <Button
         android:layout_width="match_parent"
@@ -146,7 +162,7 @@
         android:elevation="0dp"
         android:layout_marginTop="100dp"
         android:textAllCaps="false"
-        android:layout_below="@+id/fanRegisterEdit"
+        android:layout_below="@+id/fanRegister"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

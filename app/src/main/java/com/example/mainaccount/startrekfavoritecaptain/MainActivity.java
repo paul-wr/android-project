@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         Button registerBtn = (Button) findViewById(R.id.registerButton);
         Button mapBtn = (Button) findViewById(R.id.map);
 
-        // final TextView tokenView = (TextView) findViewById(R.id.informationTextView);
-        // tokenView.setText(FirebaseInstanceId.getInstance().getToken());
 
 
 
@@ -131,19 +128,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button logTokenButton = (Button) findViewById(R.id.logTokenButton);
-        logTokenButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Get token
-                String token = FirebaseInstanceId.getInstance().getToken();
-
-                // Log and toast
-                msg = getString(R.string.msg_token_fmt, token);
-                Log.d(TAG, msg);
-                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-            }
-        });
 
     }
 }

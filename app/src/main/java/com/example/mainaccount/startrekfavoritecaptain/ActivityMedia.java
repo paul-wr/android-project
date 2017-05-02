@@ -48,11 +48,11 @@ public class ActivityMedia extends AppCompatActivity {
 
         iv = (ImageView) findViewById(R.id.image_starship);
 
-
+        // set EditText
         fanRegET = (EditText) findViewById(R.id.fanRegisterEdit);
 
 
-
+        // onclick records the Fan name and pushes it to the FireBase database
         fanReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,9 +60,11 @@ public class ActivityMedia extends AppCompatActivity {
 
                 databaseRef.push().setValue(fanName);
 
-
+                // reset EditText field
                 fanRegET.setText("");
-                Toast.makeText(getApplicationContext(), "Fan added to Database", Toast.LENGTH_SHORT).show();
+
+                // Send Toast message to user
+                Toast.makeText(getApplicationContext(), "Your name has been added to our Fan List!", Toast.LENGTH_SHORT).show();
 
             }
         });
